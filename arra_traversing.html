@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Array traverse</title>
+    <script>
+      const data = [1, 2, 344, 65, 23, 54, 56, 78];
+      function getElement() {
+        let el = document.getElementById('element').value;
+        if (el < data.length && typeof parseInt(el) === 'number') {
+          alert(Math.round(Math.random() * data[el]));
+        } else {
+          alert('Invalid number');
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <input type="num" id="element" />
+    <button onClick="getElement()">GET ELEMENT</button>
+  </body>
+</html>
