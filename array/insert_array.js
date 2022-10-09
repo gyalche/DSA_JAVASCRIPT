@@ -21,10 +21,10 @@ function insertEl() {
 
   let newEl = document.getElementyById('#ele').value;
   let positon = document.getElementById('#pos').value;
+
   console.log(data);
   for (let i = data.length - 1; i >= 0; i--) {
     // console.log(data[i]);
-
     if (i >= positon) {
       data[i + 1] = data[i];
       if (i == positon) {
