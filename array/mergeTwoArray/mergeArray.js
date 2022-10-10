@@ -6,8 +6,14 @@ for (let i = 0; i < data1.length; i++) {
   data3[i] = data1[i];
 }
 for (let i = 0; i < data2.length; i++) {
-  data3[data1.length + i] = data2[i];
+  data3[data2.length + i] = data2[i];
 }
+// for (let i = 0; i < data1.length; i++) {
+//   data3[i] = data1[i];
+// }
+// for (let i = 0; i < data2.length; i++) {
+//   data3[data1.length + i] = data2[i];
+// }
 // for (let i = 0; i < data1.length; i++) {
 //   data3[i] = data1[i];
 // }

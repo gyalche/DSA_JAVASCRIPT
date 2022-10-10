@@ -5,7 +5,8 @@ let data3 = [];
 let d1 = 0;
 let d2 = 0;
 let d3 = 0;
-
+ 
+//whiel loop merege for sorting;
 while (d1 < data1.length && d2 < data2.length) {
   if (data1[d1] < data2[d2]) {
     data3[d3] = data1[d1];
