@@ -12,7 +12,7 @@
 // function topfunction() {
 //   fruits();
 // }
-
+// topfunction();
 function test(x) {
   console.log(x); //this is head recursion
   if (x > 0) {
@@ -21,5 +21,3 @@ function test(x) {
   //   console.log(x); // this is tail recursion
 }
 console.log(text(5));
-
-topfunction();
