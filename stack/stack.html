@@ -4,8 +4,22 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="stack.js" defer></script>
+    <!-- <script src="stack.js" defer></script> -->
+    <script src="stack_with_input.js" defer></script>
+
     <title>Document</title>
+    <style>
+      button {
+        margin-top: 100px;
+      }
+    </style>
   </head>
-  <body></body>
+  <body>
+    <center>
+      <input type="text" placeholder="Enter stack element" id="newEl" />
+      <button onclick="push()">Add element to stack</button>
+      <button onclick="pop()">Remove element from stack</button>
+      <button onclick="display()">Display all element of stack</button>
+    </center>
+  </body>
 </html>
