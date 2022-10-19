@@ -1,6 +1,7 @@
 let queue = [];
 let currentSize = queue.length;
 let maxSize = 5;
+
 function enqueue(value) {
   if (currentSize < maxSize) {
     queue[currentSize] = value;
