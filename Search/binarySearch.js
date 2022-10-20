@@ -27,7 +27,7 @@
 // console.log(position);
 
 let data = [2, 3, 5, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17];
-let find = 16;
+let find = 5;
 let position = undefined;
 let start = 0;
 let end = data.length - 1;
@@ -46,7 +46,7 @@ while (start <= end) {
   }
   //when finding is less than mid;
   else {
-    start = mid - 1;
+    end = mid - 1;
   }
 }
 
