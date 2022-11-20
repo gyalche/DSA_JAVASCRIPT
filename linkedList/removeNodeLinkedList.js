@@ -54,4 +54,5 @@ list.appendNode(500);
 list.appendNode(600);
 
 list.deleteNode(4);
+list.deleteNode(2);
 console.log(list);
