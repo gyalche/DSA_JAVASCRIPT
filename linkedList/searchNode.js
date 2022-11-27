@@ -46,7 +46,6 @@ class List {
   }
 
   searchNode(data) {
-  
     let result = undefined;
     let lead = this.head;
     let loop = true;
