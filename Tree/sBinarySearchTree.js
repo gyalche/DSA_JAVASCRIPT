@@ -50,12 +50,41 @@ class BsTree {
       return this.search(root.right, value);
     }
   }
+
+  preOrder(root) {
+    if (root) {
+      console.log('pre-order', root.value);
+      this.preOrder(root.left);
+      this.preOrder(root.right);
+    }
+  }
+  inOrder(root) {
+    if (root) {
+      this.inOrder(root.left);
+      console.log('indorder', root.value);
+      this.inOrder(root.right);
+    }
+  }
+  postOrder(root) {
+    if (root) {
+      this.postOrder(root.left);
+      this.postOrder(root.right);
+      console.log('post', root.value);
+    }
+  }
 }
 
 let bst = new BsTree();
-bst.makeTree(100);
+bst.makeTree(20);
 bst.makeTree(10);
-bst.makeTree(110);
-console.log(bst.search(bst.root, 10));
+bst.makeTree(5);
+bst.makeTree(11);
+bst.makeTree(30);
+bst.makeTree(40);
+bst.makeTree(23);
 
-console.log(bst);
+console.log(bst.preOrder(bst.root));
+console.log(bst.inOrder(bst.root));
+console.log(bst.postOrder(bst.root));
+
+console.log(bst.search(bst.root, 10));
