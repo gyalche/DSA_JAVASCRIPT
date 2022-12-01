@@ -56,7 +56,7 @@ class BsTree {
     let queue = [];
     queue.push(this.root);
 
-    while (queue.lenght) {
+    while (queue.length) {
       let current = queue.shift();
       if (current.left) {
         queue.push(current.left);
