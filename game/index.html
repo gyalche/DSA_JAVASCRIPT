@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <script src="game.js" defer></script>
+    <title>Hit Mosquito Game</title>
+  </head>
+
+  <body>
+    <div id="playground">
+      <img
+        class="mosquito"
+        id="mosquito"
+        src="https://mir-s3-cdn-cf.behance.net/project_modules/1400/fddf4b18843225.5c1779caa2fa3.jpg"
+        alt=""
+        onClick="hitMosquito()"
+      />
+    </div>
+
+    <div class="controls">
+      <h3>
+        <span>Total</span>
+        <span class="totalHit"></span>
+      </h3>
+      <button onClick="startGame()">Start Game</button>
+    </div>
+  </body>
+</html>
